@@ -8,14 +8,14 @@ services:
       - "host.docker.internal:172.17.0.1"
 
   zookeeper:
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.9.0
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
     extra_hosts:
       - "host.docker.internal:172.17.0.1"
 
   kafka:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.9.0
     depends_on:
       - zookeeper
     ports:

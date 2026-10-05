@@ -1,3 +1,3 @@
 module github.com/paulohhs/gokafka
 
-go 1.25.0
+go 1.22.12
